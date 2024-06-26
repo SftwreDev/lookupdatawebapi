@@ -19,7 +19,7 @@ env = environ.Env()
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Load environment vars from the .env file located in BASE_DIR
+# Load environment variables from the .env file located in BASE_DIR
 env_file = os.path.join(BASE_DIR, ".env")
 if os.path.exists(env_file):
     environ.Env.read_env(env_file)
